@@ -18,6 +18,15 @@ function average(array){
     return sum / array.length
 }
 
+function min(array){  
+    let min = array[0]
+    for (let index = 1; index < array.length; index++) {
+        const element = array[index];
+        if(min > element){
+            min = element
+        }
+    }
+    return min
+}
 
-
-module.exports = {count, average}
+module.exports = {count, average, min}
