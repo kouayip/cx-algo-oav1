@@ -29,4 +29,15 @@ function min(array){
     return min
 }
 
-module.exports = {count, average, min}
+function max(array){  
+    let max = array[0]
+    for (let index = 1; index < array.length; index++) {
+        const element = array[index];
+        if(max < element){
+            max = element
+        }
+    }
+    return max
+}
+
+module.exports = {count, average, min, max}
