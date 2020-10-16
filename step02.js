@@ -2,7 +2,6 @@
 
 module.exports = function(str){
     const validator = {}
-    let score = 0;
     for (let index = 0; index < str.length; index++) {
         const char = str[index].toLowerCase()
         const charCode = char.charCodeAt(0)
@@ -11,6 +10,5 @@ module.exports = function(str){
 
         }
     }
-
     return Object.keys(validator).length === 26
 }
