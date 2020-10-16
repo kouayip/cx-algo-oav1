@@ -51,7 +51,7 @@ function shift(array){
         }        
     }
 
-    console.log(array);
+    return array
 }
 
 module.exports = {count, average, min, max, shift}
