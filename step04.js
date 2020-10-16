@@ -40,4 +40,18 @@ function max(array){
     return max
 }
 
-module.exports = {count, average, min, max}
+function shift(array){
+    for (let i = 0; i < array.length -1; i++) {
+        for (let j = i+1; j < array.length; j++) {
+            if(array[i] > array[j]){
+                let help = array[i];
+                array[i] = array[j]
+                array[j] = help
+            }
+        }        
+    }
+
+    console.log(array);
+}
+
+module.exports = {count, average, min, max, shift}
